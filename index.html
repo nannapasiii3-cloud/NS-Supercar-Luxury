@@ -1,0 +1,892 @@
+
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="NS Super car Luxury - Luxury Supercar Collection">
+
+    <title>NS Super car Luxury</title>
+
+
+    <!-- =========================================
+         BOOTSTRAP 5 CSS
+    ========================================== -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+
+    <!-- =========================================
+         BOOTSTRAP ICONS
+    ========================================== -->
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+
+    <!-- =========================================
+         CUSTOM CSS
+    ========================================== -->
+    <link rel="stylesheet"
+          href="css/style.css">
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     NAVBAR
+     เมนูจะถูกเรียกจากไฟล์ js/menu.js
+====================================================== -->
+
+<div id="menu"></div>
+
+
+
+<!-- =====================================================
+     HERO SECTION
+====================================================== -->
+
+<section class="hero-section">
+
+    <div class="hero-overlay"></div>
+
+
+    <div class="container">
+
+        <div class="row min-vh-100 align-items-center">
+
+
+            <div class="col-lg-8 col-md-10">
+
+
+                <div class="hero-content">
+
+
+                    <p class="hero-subtitle">
+                        PREMIUM SUPERCAR COLLECTION
+                    </p>
+
+
+                    <h1 class="hero-title">
+
+                        NS SUPERCAR
+
+                        <span>
+                            LUXURY
+                        </span>
+
+                    </h1>
+
+
+                    <p class="hero-description">
+
+                        Experience Performance.
+                        Discover Luxury.
+
+                    </p>
+
+
+                    <p class="hero-text">
+
+                        Discover an exclusive collection of
+                        extraordinary supercars where
+                        performance, technology and luxury
+                        come together.
+
+                    </p>
+
+
+
+                    <!-- HERO BUTTONS -->
+
+                    <div class="hero-buttons">
+
+
+                        <a href="#supercars"
+                           class="btn btn-luxury">
+
+                            EXPLORE SUPERCARS
+
+                            <i class="bi bi-arrow-right ms-2"></i>
+
+                        </a>
+
+
+                        <a href="contact.html"
+                           class="btn btn-outline-luxury">
+
+                            CONTACT US
+
+                        </a>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     INTRODUCTION
+====================================================== -->
+
+<section class="intro-section">
+
+
+    <div class="container">
+
+
+        <div class="row align-items-center">
+
+
+            <!-- LEFT -->
+
+            <div class="col-lg-6">
+
+
+                <p class="section-label">
+
+                    NS SUPERCAR LUXURY
+
+                </p>
+
+
+                <h2 class="section-title">
+
+                    Beyond Speed.
+
+                    <span>
+                        Beyond Luxury.
+                    </span>
+
+                </h2>
+
+
+            </div>
+
+
+
+            <!-- RIGHT -->
+
+            <div class="col-lg-6">
+
+
+                <p class="intro-description">
+
+                    Welcome to NS Super car Luxury,
+                    a destination for extraordinary automobiles.
+
+                    Discover exclusive supercars that combine
+                    breathtaking performance, advanced technology,
+                    sophisticated design and automotive excellence.
+
+                </p>
+
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     SUPERCAR COLLECTION
+====================================================== -->
+
+<section id="supercars"
+         class="supercar-section">
+
+
+    <div class="container">
+
+
+        <!-- SECTION HEADER -->
+
+        <div class="section-header text-center">
+
+
+            <p class="section-label">
+
+                EXCLUSIVE COLLECTION
+
+            </p>
+
+
+            <h2 class="section-title">
+
+                Discover Our
+
+                <span>
+                    Supercars
+                </span>
+
+            </h2>
+
+
+            <p class="section-description">
+
+                Explore our collection of
+                20 extraordinary supercars.
+
+            </p>
+
+
+        </div>
+
+
+
+        <!-- =================================================
+             FILTER BUTTONS
+        ================================================== -->
+
+        <div class="car-filter text-center">
+
+
+            <button class="filter-btn active"
+                    data-filter="all">
+
+                ALL
+
+            </button>
+
+
+            <button class="filter-btn"
+                    data-filter="lamborghini">
+
+                LAMBORGHINI
+
+            </button>
+
+
+            <button class="filter-btn"
+                    data-filter="ferrari">
+
+                FERRARI
+
+            </button>
+
+
+            <button class="filter-btn"
+                    data-filter="mclaren">
+
+                McLAREN
+
+            </button>
+
+
+            <button class="filter-btn"
+                    data-filter="porsche">
+
+                PORSCHE
+
+            </button>
+
+
+            <button class="filter-btn"
+                    data-filter="other">
+
+                MORE
+
+            </button>
+
+
+        </div>
+
+
+
+        <!-- =================================================
+             SUPERCAR GRID
+             รถ 20 คันจะถูกสร้างด้วย JavaScript
+        ================================================== -->
+
+        <div class="row g-4"
+             id="carContainer">
+
+
+            <!--
+
+            JavaScript จะสร้าง Card รถในส่วนนี้
+
+            Desktop XL = 4 คัน / แถว
+            Desktop    = 3 คัน / แถว
+            Tablet     = 2 คัน / แถว
+            Mobile     = 1 คัน / แถว
+
+            -->
+
+
+        </div>
+
+
+
+        <!-- VIEW ALL -->
+
+        <div class="text-center view-all-area">
+
+
+            <a href="cars.html"
+               class="btn btn-luxury">
+
+
+                VIEW ALL SUPERCARS
+
+
+                <i class="bi bi-arrow-right ms-2"></i>
+
+
+            </a>
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     BRAND SECTION
+====================================================== -->
+
+<section class="brand-section">
+
+
+    <div class="container">
+
+
+        <div class="text-center">
+
+
+            <p class="section-label">
+
+                WORLD CLASS AUTOMOTIVE
+
+            </p>
+
+
+            <h2 class="section-title">
+
+                Legendary
+
+                <span>
+                    Brands
+                </span>
+
+            </h2>
+
+
+        </div>
+
+
+
+        <div class="row justify-content-center
+                    align-items-center text-center">
+
+
+            <div class="col-lg-2 col-md-4 col-6 brand-item">
+                LAMBORGHINI
+            </div>
+
+
+            <div class="col-lg-2 col-md-4 col-6 brand-item">
+                FERRARI
+            </div>
+
+
+            <div class="col-lg-2 col-md-4 col-6 brand-item">
+                McLAREN
+            </div>
+
+
+            <div class="col-lg-2 col-md-4 col-6 brand-item">
+                PORSCHE
+            </div>
+
+
+            <div class="col-lg-2 col-md-4 col-6 brand-item">
+                BUGATTI
+            </div>
+
+
+            <div class="col-lg-2 col-md-4 col-6 brand-item">
+                PAGANI
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     WHY CHOOSE NS
+====================================================== -->
+
+<section class="experience-section">
+
+
+    <div class="container">
+
+
+        <div class="section-header text-center">
+
+
+            <p class="section-label">
+
+                THE NS EXPERIENCE
+
+            </p>
+
+
+            <h2 class="section-title text-white">
+
+                Experience
+
+                <span>
+                    Excellence
+                </span>
+
+            </h2>
+
+
+        </div>
+
+
+
+        <div class="row g-4">
+
+
+            <!-- CARD 1 -->
+
+            <div class="col-lg-4 col-md-6">
+
+
+                <div class="experience-card">
+
+
+                    <div class="experience-icon">
+
+                        <i class="bi bi-speedometer2"></i>
+
+                    </div>
+
+
+                    <h3>
+
+                        Performance
+
+                    </h3>
+
+
+                    <p>
+
+                        Extraordinary engineering
+                        created for exceptional
+                        performance.
+
+                    </p>
+
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- CARD 2 -->
+
+            <div class="col-lg-4 col-md-6">
+
+
+                <div class="experience-card">
+
+
+                    <div class="experience-icon">
+
+                        <i class="bi bi-gem"></i>
+
+                    </div>
+
+
+                    <h3>
+
+                        Luxury
+
+                    </h3>
+
+
+                    <p>
+
+                        Sophisticated design,
+                        premium craftsmanship
+                        and exclusivity.
+
+                    </p>
+
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- CARD 3 -->
+
+            <div class="col-lg-4 col-md-12">
+
+
+                <div class="experience-card">
+
+
+                    <div class="experience-icon">
+
+                        <i class="bi bi-cpu"></i>
+
+                    </div>
+
+
+                    <h3>
+
+                        Technology
+
+                    </h3>
+
+
+                    <p>
+
+                        Advanced automotive technology
+                        engineered for the future.
+
+                    </p>
+
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     CALL TO ACTION
+====================================================== -->
+
+<section class="cta-section">
+
+
+    <div class="container">
+
+
+        <div class="row align-items-center">
+
+
+            <div class="col-lg-8">
+
+
+                <p class="section-label">
+
+                    NS SUPERCAR LUXURY
+
+                </p>
+
+
+                <h2>
+
+                    Find Your
+
+                    <span>
+                        Dream Supercar.
+                    </span>
+
+                </h2>
+
+
+                <p>
+
+                    Discover extraordinary performance
+                    and experience a new level of luxury.
+
+                </p>
+
+
+            </div>
+
+
+
+            <div class="col-lg-4
+                        text-lg-end">
+
+
+                <a href="contact.html"
+                   class="btn btn-luxury">
+
+
+                    CONTACT US
+
+
+                    <i class="bi bi-arrow-right ms-2"></i>
+
+
+                </a>
+
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     FOOTER
+====================================================== -->
+
+<footer class="footer">
+
+
+    <div class="container">
+
+
+        <div class="row">
+
+
+            <!-- LOGO -->
+
+            <div class="col-lg-5 mb-4">
+
+
+                <div class="footer-brand">
+
+
+                    <div class="footer-ns">
+
+                        NS
+
+                    </div>
+
+
+                    <div>
+
+                        <strong>
+                            SUPERCAR
+                        </strong>
+
+                        <span>
+                            LUXURY
+                        </span>
+
+                    </div>
+
+
+                </div>
+
+
+                <p class="footer-description">
+
+                    Where extraordinary performance
+                    meets timeless luxury.
+
+                </p>
+
+
+            </div>
+
+
+
+            <!-- MENU -->
+
+            <div class="col-lg-2 col-md-4 mb-4">
+
+
+                <h5>
+                    MENU
+                </h5>
+
+
+                <a href="index.html">
+                    Home
+                </a>
+
+
+                <a href="cars.html">
+                    Supercars
+                </a>
+
+
+                <a href="brands.html">
+                    Brands
+                </a>
+
+
+            </div>
+
+
+
+            <!-- COMPANY -->
+
+            <div class="col-lg-2 col-md-4 mb-4">
+
+
+                <h5>
+                    COMPANY
+                </h5>
+
+
+                <a href="about.html">
+                    About
+                </a>
+
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+
+            </div>
+
+
+
+            <!-- SOCIAL -->
+
+            <div class="col-lg-3 col-md-4">
+
+
+                <h5>
+
+                    FOLLOW NS
+
+                </h5>
+
+
+                <div class="social-icons">
+
+
+                    <a href="#">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+
+
+                    <a href="#">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+
+
+                    <a href="#">
+                        <i class="bi bi-tiktok"></i>
+                    </a>
+
+
+                    <a href="#">
+                        <i class="bi bi-youtube"></i>
+                    </a>
+
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+
+        <div class="footer-bottom">
+
+
+            <p>
+
+                © 2026 NS Super car Luxury.
+                All Rights Reserved.
+
+            </p>
+
+
+        </div>
+
+
+    </div>
+
+
+</footer>
+
+
+
+<!-- =====================================================
+     BOOTSTRAP JAVASCRIPT
+====================================================== -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+<!-- =====================================================
+     MENU JAVASCRIPT
+====================================================== -->
+
+<script src="js/menu.js"></script>
+
+
+
+<!-- =====================================================
+     MAIN JAVASCRIPT
+====================================================== -->
+
+<script src="js/main.js"></script>
+
+
+</body>
+
+</html>
+```
